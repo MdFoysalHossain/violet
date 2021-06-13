@@ -1,0 +1,927 @@
+/* GOOGLE FONTS START 
+1. Open Sans Regular
+2. Open Sans Bold
+3. Raleway Light
+4. Raleway Regular
+5. Raleway Bold
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@300;400;600&display=swap');
+/* GOOGLE FONTS END */
+
+/* START OF COMMON CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', 'sans-serif';
+}
+
+/* END OF COMMON CSS */
+
+/*====================================
+       SECTION HEADER CSS START
+=====================================*/
+
+.section_header{
+    text-align: center;
+}
+.section_header_upper{
+    text-align: center;
+    color: #353535;
+}
+
+.section_header_upper h2{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.section_header_lower{
+    text-align: center;
+}
+
+
+/*====================================
+        SECTION HEADER CSS END
+=====================================*/
+
+/*============================
+       NAVBAR CSS START
+=============================*/
+#active_menu{
+    color: #744fa0;
+}
+
+
+.full_nav{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav_logo{
+    padding: 59px 0;
+    width: 30%;
+    float: left;
+}
+
+.menubar{
+    font-family: 'Open Sans', 'sans-serif';
+    width: 70%;
+    float: left;
+    font-size: 14px;
+}
+.menubar ul{
+    text-align: right;
+}
+.menubar ul li{
+    display: inline-block;
+    padding: 80px 0;
+}
+.menubar ul li a{
+    padding-right: 36px;
+    color: #fdfdfe;
+    position: relative;
+    transition: all .3s linear;
+}
+
+.menubar ul li a:before{
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #744fa0;
+    transition: all .3s linear;
+}
+
+.menubar ul li a:hover{
+    color: #744fa0;
+}
+
+.menubar ul li a:hover:before{
+    width: 15px;
+    color: #744fa0;
+}
+
+
+.menubar ul li a.nav_btn{
+    font-weight: 600;
+    padding: 6px 19px;
+    background: #744fa0;
+    color: #fdfdfe;
+    border-radius: 3px;
+    
+}
+
+.menubar ul li a.nav_btn:before{
+    display: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', 'sans-serif';
+}
+/*============================
+         NAVBAR CSS END
+=============================*/
+
+/*============================
+       BANNER CSS START
+=============================*/
+
+.banner_area{
+    background: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner_overlay{
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.banner_first{
+    width: 50%;
+    float:left;
+}
+
+.banner_first img{
+    width: 644px;
+    margin-left: -60px;
+    padding-top: 168px;
+    padding-bottom: 39px;
+}
+
+.banner_other_first{
+    width: 50%;
+    height: 400px;
+    float:left;
+}
+
+.banner_text{
+    margin-top: 222px;
+    text-align: right;
+}
+
+.logo_text{
+    display: inline-block;
+    color: #744fa0;
+    font-size: 56px;
+    margin-right: -4px;
+    font-weight: 600;
+    line-height: 1;
+}
+.logo_text2{
+    display: inline-block;
+    color: #fff;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.banner_text h4{
+    margin-top: 9px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.banner_underline{
+    margin-top: 28px;
+    background: #fff;
+    height: 1px;
+    width: 200px;
+    float: right;
+}
+
+.banner_text p{
+    margin-top: 24px;
+    font-size: 14px;
+    padding-left: 100px;
+    color: #fff;
+}
+
+
+.available_places{
+    margin-top: 59px;
+}
+
+.banner_device{
+    background: #f1f1f1;
+    float: right;
+    padding: 0 27px;
+    padding-bottom: 5px;
+    border-radius: 5px;  
+}
+
+.device_icon{
+    padding-top: 10px;
+    float: left;
+    font-size: 33px;
+    padding-right: 10px;
+}
+
+.device_icon i{
+    color: #353535;
+}
+
+
+.device_text{
+    float: left;
+    padding: 5px 0;
+}
+.device_first_half{
+    height: 50%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.device_first_half h4{
+    font-size: 14px;
+    color: #353535;
+}
+
+.device_second_half{
+    height: 50%;
+    text-align: left;
+}
+
+.device_second_half h3 a{
+    font-size: 18px;
+    color: #353535;
+}
+
+
+
+
+.banner_device2{
+    color: #fff;
+    background: #744fa0;
+    float: right;
+    padding: 0 20px;
+    padding-bottom: 5px;
+    border-radius: 5px;  
+}
+
+.device_icon2{
+    padding-top: 8px;
+    float: left;
+    font-size: 33px;
+    padding-right: 10px;
+}
+
+
+.device_text2{
+    float: left;
+    padding: 5px 0;
+    
+}
+.device_first_half2{
+    height: 50%;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+}
+
+.device_first_half2 h4{
+    font-size: 14px;
+    color: #fff;
+}
+
+.device_second_half2{
+    height: 50%;
+    text-align: left;
+    color: #fff;
+}
+
+.device_second_half2 h3 a{
+    font-size: 18px;
+    color: #fff;
+}
+
+/*============================
+        BANNER CSS END
+=============================*/
+
+/*============================
+      ABOUT US CSS START
+=============================*/
+
+.about_area{
+    margin-top: 78px;
+    padding-bottom: 20px;
+}
+.about_text{
+    float: left;
+    width: 55%;
+    padding-left: 60px;
+    padding-top: 42px;
+}
+
+.in_about_text{
+    text-align: center;
+    
+}
+.in_about_text p{
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 400;
+}
+
+.about_img{
+    float: left;
+    width: 45%;
+    text-align: right;
+}
+
+/*============================
+        ABOUT US CSS END
+=============================*/
+
+/*============================
+      FEATURES CSS START
+=============================*/
+
+.features_area{
+    background: #f1f1f1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+/* Features left one start */
+.features_left_one{
+    width: 33%;
+    float: left;
+}
+.features_icon{
+    float: left;
+}
+.features_icon i{
+    font-size: 42px;
+    color: #353535;
+    padding-right: 8px;
+    transition: all .3s linear;
+}
+.ftr_left_one_text{
+    float: left;
+}
+.ftr_left_one_text h5{
+    color: #353535;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.ftr_left_one_text p{
+    color: #777777;
+    font-size: 14px;
+}
+
+.features_underline{
+    height: 1px;
+    width: 270px;
+    background: #353535;
+    transition: all .2s linear;
+}
+
+.features_left_one > :hover .features_icon i{
+    color: #744fa0;
+}
+
+.features_left_one > :hover .ftr_left_one_text p{
+    color: #744fa0;
+}
+.features_left_one > :hover .ftr_left_one_text h5{
+    color: #744fa0;
+}
+
+
+.features_left_one > :hover .features_underline{
+    width: 370px;
+    background: #744fa0;
+}
+
+/* Features left one end */
+
+/* Features left two end */
+.features_middle_two{
+    width: 34%;
+    float: left;
+    text-align: center;
+}
+
+.features_middle_two img{
+}
+/* Features left two end */
+
+.features_right_three{
+    width: 33%;
+    float: left;
+    text-align: right;
+}
+
+.features_right_three h5{
+    font-weight: 600;
+    font-size: 18px;
+    color: #353535;
+    margin-top: 70px;
+    margin-bottom: 19px;
+}
+
+.features_right_three p{
+    font-size: 14px;
+    color: #777777;
+}
+
+/*============================
+       FEATURES CSS END
+=============================*/
+
+/*============================
+    SCREENSHOTS CSS START
+=============================*/
+
+.screenshot_area{}
+.screenshots_img{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.slider_btn{
+    text-align: center;
+}
+.slider_btn input{
+    margin-top: 20px;
+    margin-left: 5px;
+    background: #744fa0;
+}
+
+
+/*============================
+      SCREENSHOTS CSS END
+=============================*/
+
+/*============================
+     WATCH VIDEO CSS START
+=============================*/
+
+.watch_back{
+    background-image: url(..//images/Watch_video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.watch_img{
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    line-height: 1;
+}
+
+.watch_img i{
+    padding: 210px 0;
+    color: #fff;
+    font-size: 80px;
+}
+
+/*============================
+      WATCH VIDEO CSS END
+=============================*/
+
+/*============================
+       PRICING CSS START
+=============================*/
+
+.pricing_area{}
+.single_pricing{
+    padding: 0 1px;
+    width: 270px;
+    background: #f1f1f1;
+    border-radius: 5px;  
+    transition: all .3 linear;
+    float: left;
+}
+
+.plan_type{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    transition: all .3 linear;
+}
+
+.plan_type h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    color: #353535;
+    transition: all .3 linear;
+    
+}
+
+.pricing_back{
+    background: #fff;
+    padding: 20px 71px;
+    
+    
+}
+.pricing_out_border{
+    height: 120px;
+    width: 120px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    position: relative;
+}
+.pricing_in_border{
+    padding: 10px 0;
+    height: 116px;
+    width: 116px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.pricing_in_br_up{}
+.pricing_in_br_up{
+    margin-left: 30px;
+    float: left;
+}
+.pricing_in_br_up h2{
+    font-size: 47px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.pricing_in_br_up_2{
+    padding-top: 30px;
+    float: left;
+}
+.pricing_in_br_up_2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #353535;
+}
+
+.pricing_in_br_bottom{
+    padding-left: 23px;
+}
+.pricing_in_br_bottom h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.pricing_details {
+    padding-top: 32px;
+    padding-bottom: 45px;
+    text-align: center;  
+}
+
+.pricing_details p{
+    line-height: 1.7;
+    color: #555555;
+    font-size: 14px;
+}
+
+.pricing_btn{
+    text-align: center;
+    background: #00ffce;
+    position: relative;
+}
+.pricing_btn a{
+    border: 1px solid #353535;
+    border-radius: 2px;
+    padding: 8px 17px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Raleway', 'sans-serif';
+    color: #353535;
+    background: #fff;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    
+    transition: all .3s linear;
+}
+
+
+.single_pricing:hover .pricing_btn a{
+    border: 1px solid #744fa0;
+    background: #744fa0;
+    color: #fff;
+}
+
+.single_pricing:hover .plan_type{
+    background: #744fa0;
+}
+
+.single_pricing:hover .plan_type h3{
+    color: #fff;
+}
+
+/*============================
+        PRICING CSS END
+=============================*/
+
+/*============================
+        TEAM CSS START
+=============================*/
+
+.team_area{
+    background: transparent;
+}
+
+.single_team{
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 33%;
+    
+}
+.member_profile{
+    
+}
+
+.member_image{
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+    z-index: 9999;
+}
+
+.member_image_overlay{
+    padding-top: 160px;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+.member_social_link{
+    float: left;
+    background: #f1f1f1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 13px;
+    transition: all .3s linear;
+}
+.member_social_link i{
+    color: #353535;
+    font-size: 24px;
+    transition: all .3s linear;
+}
+
+.member_social_link:hover{
+    background: #1da1f2;
+}
+
+.member_social_link:hover.member_social_link i{
+    color: #fff;
+}
+
+.member_texts{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding:  0 70px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    z-index: 999;
+}
+.member_texts h4{
+    padding-top: 26px;
+    padding-bottom: 8px;  
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #353535;
+    font-weight: 600;
+}
+.member_texts span{
+    
+    font-size: 15px;
+    font-family: 'Open Sans', 'sans-serif';
+    color: #555555;
+}
+.member_texts p{
+    padding-top: 11px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: #777777;
+}
+
+.single_team:hover .member_image_overlay{
+    opacity: 1;
+    visibility: visible;
+    border: 1px solid #eeeeee;
+}
+
+.single_team:hover .member_image{
+    top: -80px;
+    left: 0;
+}
+
+.single_team:hover .member_texts{
+    opacity: 1;
+    visibility: visible;
+    bottom: -80px;
+    left: 0;
+    border: 1px solid #eeeeee;
+}
+
+
+/*============================
+         TEAM CSS END
+=============================*/
+
+/*============================
+      FEEDBACK CSS START
+=============================*/
+
+.feedback_area{}
+
+.feedback_back{
+    background-image: url(..//images/feedback_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+.feedback_overlay{
+    background: rgba(0, 0, 0, .7);
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.feedback_upper{
+    margin: 0 auto;
+    background: #f1f1f1;
+    width: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.feedback_upper p{
+    padding: 0 50px;
+    padding-top: 25px;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 22px;
+}
+
+.feedback_upper i{
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #744fa0;
+}
+
+.feedback_upper h3{
+    font-weight: 600;
+    font-size: 18px;
+    color: #353535;
+}
+
+.feedback_upper span{
+    font-family: 'Open Sans', 'sans-serif';
+    color: #555555;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.feedback_arrow{
+    height: 28px;
+    width: 28px;
+    background: #f1f1f1;
+    border-radius: 15%;
+    position: absolute;
+    top: 89%;
+    left: 48%;
+    transform: rotate(45deg);
+    z-index: 999;
+}
+
+.feedback_lower{
+    margin-top: 40px;
+}
+
+.feedback_slider_btn input{
+    margin: 0 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*============================
+       FEEDBACK CSS END
+=============================*/
+
+/*============================
+      COPYRIGHT CSS START
+=============================*/
+
+.copyright_area{
+    text-align: center;
+    background: #353535;
+    padding-top: 30px;
+}
+
+.copyright_icons{
+    padding-left: 37%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cpr_social_icons{
+    
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: all .3s linear;
+}
+.cpr_social_icons i{
+    padding-top: 13px;
+    color: #353535;
+    font-size: 24px;
+    transition: all .3s linear;
+}
+
+.cpr_social_icons:hover{
+    background: #1da1f2;
+}
+
+.cpr_social_icons:hover.cpr_social_icons i{
+    color: #fff;
+}
+.copyright_link{
+    padding-left: 400px;
+}
+
+.copyright_text{
+    float: left;
+    padding-bottom: 10px;
+}
+.copyright_text p{
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+.copyright_text a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #744fa0;
+}
+
+
+/*============================
+       COPYRIGHT CSS END
+=============================*/
+
